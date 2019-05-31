@@ -12,3 +12,9 @@ newsapi_key(key)
 \description{
 Setup your session, all subsequent calls will be done using the API key.
 }
+\examples{
+\dontrun{
+newsapi_key("xXXxxXxXxXXx")  
+}
+
+}
