@@ -15,5 +15,6 @@ Imports:
     httr,
     purrr,
     tibble,
+    dplyr,
     assertthat
 RoxygenNote: 6.1.1
