@@ -33,7 +33,8 @@ top_headlines <- function(q = NULL, results = 100, country = NULL, category = NU
 
   content %>% 
     map("articles") %>% 
-    flatten()
+    flatten() %>% 
+    .parse()
 }
 
 #' Everything
@@ -71,7 +72,8 @@ every_news <- function(q = NULL, results = 100, sources = NULL, domains = NULL, 
 
   content %>% 
     map("articles") %>% 
-    flatten()
+    flatten() %>% 
+    .parse()
 }
 
 

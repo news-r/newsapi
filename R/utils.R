@@ -67,3 +67,17 @@ SRCS <- c(
     x <- format(x, "%Y-%m-%dT%H:%M:%S")
   return(x)
 }
+
+.parse <- function(content){
+  map_dfr(
+    content,
+    function(row){
+      row <- map(row, function(cell){
+        if(length(cell) > 1) cell <- unlist(cell)
+        if(is.null(cell)) cell <- NA
+        return(cell)
+      })
+      dplyr::as_tibble(row)
+    }
+  )
+}

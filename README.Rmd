@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/news-r/newsapi.svg?branch=master)](https://travis-ci.org/news-r/newsapi)
+<!-- badges: end -->
+
+# newsapi
+
+> Get breaking news headlines, and search for articles from over 30,000 news sources and blogs with our news API.
+
+[News API](https://newsapi.org) integration with R.
+
+## Installation
+
+``` r
+# install.packages("remotes")
+remotes::install_github("news-r/newsapi")
+```
+
+## Setup
+
+Create a free account at [newsapi.org](https://newsapi.org/) to create an API key.
+
+```r
+newsapi_key("xxXXxxXx")
+```
+
+Note that you can specify the key as an environment variable in your `.Renviron` for convenience.
+
+## Example
+
+```{r}
+library(newsapi)
+
+news_sources()
+top_headlines("China")
+every_news("Trump")
+```
