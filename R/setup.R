@@ -4,6 +4,12 @@
 #'
 #' @param key Your API key, freely available at \url{https://newsapi.org}.
 #' 
+#' @examples
+#' \dontrun{
+#' newsapi_key("xXXxxXxXxXXx")  
+#' }
+#' 
+#' @import httr
 #' @import assertthat
 #' 
 #' @export
