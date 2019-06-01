@@ -4,6 +4,8 @@
 #'
 #' @param key Your API key, freely available at \url{https://newsapi.org}.
 #' 
+#' @note You can specify \code{NEWSAPI_API_KEY} as environment variable, likely in your \code{.Renviron} file.
+#' 
 #' @examples
 #' \dontrun{
 #' newsapi_key("xXXxxXxXxXXx")  

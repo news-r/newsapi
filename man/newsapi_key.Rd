@@ -12,6 +12,9 @@ newsapi_key(key)
 \description{
 Setup your session, all subsequent calls will be done using the API key.
 }
+\note{
+You can specify \code{NEWSAPI_API_KEY} as environment variable, likely in your \code{.Renviron} file.
+}
 \examples{
 \dontrun{
 newsapi_key("xXXxxXxXxXXx")  
