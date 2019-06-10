@@ -27,7 +27,7 @@ Create a free account at [newsapi.org](https://newsapi.org/) to create an API ke
 newsapi_key("xxXXxxXx")
 ```
 
-Note that you can specify the key as an environment variable in your `.Renviron` for convenience.
+Note that you can specify the `NEWSAPI_API_KEY` key as an environment variable in your `.Renviron` for convenience.
 
 ## Example
 
