@@ -21,7 +21,7 @@ remotes::install_github("news-r/newsapi")
 
 ## Setup
 
-Create a free account at [newsapi.org](https://newsapi.org/) to create an API key.
+Get a free key from the [newsapi.org](https://newsapi.org/) website.
 
 ```r
 newsapi_key("xxXXxxXx")
