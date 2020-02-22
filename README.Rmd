@@ -1,5 +1,7 @@
 ---
-output: github_document
+output: 
+  github_document:
+    html_preview: false
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -15,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/news-r/newsapi.svg?branch=master)](https://travis-ci.org/news-r/newsapi)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/news-r/newsapi?branch=master&svg=true)](https://ci.appveyor.com/project/news-r/newsapi)
 <!-- badges: end -->
 
 # newsapi
